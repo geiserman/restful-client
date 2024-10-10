@@ -1,1 +1,5 @@
-console.log('Hello, World!');
+const restful = require('./src/restful-fetcher.service');
+
+module.exports = {
+    ...restful,
+};

@@ -1,7 +1,7 @@
 {
-  "name": "@geiserman/js-package-template",
+  "name": "@geiserman/restful-client",
   "version": "1.0.1",
-  "description": "JS package template",
+  "description": "JS restfull client based on superagent with ability to control retries, timeouts, and logging",
   "scripts": {
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
@@ -9,12 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geiserman/package-template.git"
+    "url": "git+https://github.com/geiserman/restful-client.git"
   },
-  "homepage": "https://github.com/geiserman/package-template#readme",
+  "homepage": "https://github.com/geiserman/restful-client#readme",
   "dependencies": {
     "@geiserman/js-linters": "^1.0.17",
-    "@geiserman/js-logger": "^1.0.0"
+    "@geiserman/js-logger": "^1.0.0",
+    "@geiserman/yaml-config-to-env": "^1.0.0",
+    "superagent": "^7.1.5",
+    "superagent-retry-delay": "^2.7.1"
+
   },
   "eslintConfig": {
     "extends": "./node_modules/@geiserman/js-linters/linters/eslintrc.js"
